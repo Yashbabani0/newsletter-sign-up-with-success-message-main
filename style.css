@@ -34,6 +34,7 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2em;
+  display: none;
 }
 .content {
   padding-left: 2em;
@@ -117,6 +118,24 @@ button:hover {
   overflow: hidden;
   margin-right: 1em;
 }
+.success-msg {
+  background-color: white;
+  border-radius: 2em;
+  width: 30%;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+.success-msg img {
+  width: 15%;
+  margin-bottom: 1em;
+}
+.success-msg h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+.confirmation-msg {
+  margin-bottom: 2em;
+}
 @media (max-width: 62em) {
   body {
     background-color: white;
@@ -138,6 +157,16 @@ button:hover {
     top: 50%;
     left: 0;
     padding: 1em;
+  }
+  .success-msg {
+    width: 100%;
+  }
+  .success-msg img {
+    width: 20%;
+    margin-bottom: 2em;
+  }
+  .confirmation-msg {
+    margin-bottom: 5em;
   }
   .attribution {
     position: absolute;
