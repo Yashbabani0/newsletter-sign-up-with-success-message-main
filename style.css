@@ -64,15 +64,15 @@ span:nth-last-child(3) {
   margin-bottom: 1em;
 }
 .email-head {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .email-title {
-    color: var(--Dark-Slate-Grey);
+  color: var(--Dark-Slate-Grey);
 }
 .error-msg {
-    color: var(--Tomato);
-    display: none;
+  color: var(--Tomato);
+  display: none;
 }
 input {
   margin-top: 0.8em;
@@ -83,28 +83,28 @@ input {
   width: 100%;
   margin-bottom: 1em;
   cursor: pointer;
-  outline: none ;
+  outline: none;
   font-size: 1em;
 }
 input:focus {
-    outline: 2px solid var(--Dark-Slate-Grey);
-    color: var(--Dark-Slate-Grey);
+  outline: 2px solid var(--Dark-Slate-Grey);
+  color: var(--Dark-Slate-Grey);
 }
 button {
-    background-color: var(--Dark-Slate-Grey);
-    color: var(--White);
-    border-radius: 0.8em;
-    padding: 1em;
-    width: 100%;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    outline: none;
-    border: none;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  border-radius: 0.8em;
+  padding: 1em;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 button:hover {
-    background-color: var(--Tomato);
-    transition: 0.4s ease-in;
+  background-color: var(--Tomato);
+  transition: 0.4s ease-in;
 }
 .main-img {
   min-width: 40%;
@@ -116,4 +116,32 @@ button:hover {
   background-repeat: no-repeat;
   overflow: hidden;
   margin-right: 1em;
+}
+@media (max-width: 62em) {
+  body {
+    background-color: white;
+  }
+  .main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 50%;
+    border-radius: 0;
+  }
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 1em;
+  }
+  .attribution {
+    position: absolute;
+    top: 125%;
+    padding-bottom: 1em;
+  }
 }
