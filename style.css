@@ -34,7 +34,6 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2em;
-  display: none;
 }
 .content {
   padding-left: 2em;
@@ -75,6 +74,15 @@ span:nth-last-child(3) {
   color: var(--Tomato);
   display: none;
 }
+.error {
+  color: var(--Tomato);
+  background-color: hsla(4, 100%, 80%, 0.5);
+  border: 2px solid var(--Tomato);
+}
+.hide {
+  display: ;
+}
+
 input {
   margin-top: 0.8em;
   padding: 1em;
@@ -124,6 +132,7 @@ button:hover {
   width: 30%;
   padding: 2em;
   margin-bottom: 1em;
+  display: none;
 }
 .success-msg img {
   width: 15%;
